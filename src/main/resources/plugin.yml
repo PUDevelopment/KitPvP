@@ -1,0 +1,25 @@
+name: KitPvP
+main: eu.playerunion.kitpvp.Main
+version: ${project.version}
+authors: ["szviktor"]
+website: "https://playernunion.eu"
+api-version: 1.16
+depend: ["PlaceholderAPI"]
+description: "A PlayerUnion KitPvP pluginja."
+
+commands:
+  kitpvp:
+    description: "A plugin vezérlésének parancsa."
+    aliases: ["kpvp", "kitp", "pvp", "rendszer", "szerver"]
+    permission: "playerunion.kitpvp"
+    permission-message: "§cNincs jogosultságod a parancs használatára!"
+    usage: "/<command> [setspawn, addSpawn, autoRestart, setKillReward, setDeathPrice]"
+  spawn:
+    description: "Teleportálás a szerver spawnjára."
+    aliases: ["spawn", "home", "base", "safeplace"]
+    usage: "/<command> [játékos]"
+
+permissions:
+  playerunion.kitpvp:
+    description: "A plugin vezérlésének jogosultsága."
+    default: op
